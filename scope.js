@@ -65,3 +65,30 @@ const llamaNamer = () => {
 
 const nameMaker = llamaNamer()
 console.log(nameMaker)
+
+// -------------------------------------------
+
+const currentInventory = [
+    "Muscle Man",
+    "Dora the Scientist",
+    "Princess Sparkles",
+    "Perry Scope",
+    "Explorer Backpack",
+    "Space Scout Suit",
+    "Geology Mineral Dig Kit",
+    "Perry Scope"
+]
+
+const sellPerryScope = (inventory) => {
+
+    for (const toy of inventory) {
+        let availableForPurchase = null
+
+        if (toy === "Perry Scope") {
+            availableForPurchase = true
+            console.log("Enjoy your new Perry Scope")
+        }
+    }
+}
+
+sellPerryScope(currentInventory)
